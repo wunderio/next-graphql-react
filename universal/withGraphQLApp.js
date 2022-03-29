@@ -106,7 +106,6 @@ module.exports = function withGraphQLApp(App) {
               )
                 .catch(console.error)
                 .then(function () {
-                  Head.rewind();
                   var responseLinkHeader = new LinkHeader(
                     context.ctx.res.getHeader('Link')
                   );
@@ -143,7 +142,6 @@ module.exports = function withGraphQLApp(App) {
               )
                 .catch(console.error)
                 .then(function () {
-                  Head.rewind();
                   props.graphqlCache = graphql.cache;
                   resolve(props);
                 });
