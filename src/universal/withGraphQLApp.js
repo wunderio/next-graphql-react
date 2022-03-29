@@ -152,8 +152,6 @@ module.exports = function withGraphQLApp(App) {
               ssr(graphql, <context.AppTree {...props} graphql={graphql} />)
                 .catch(console.error)
                 .then(() => {
-                  Head.rewind();
-
                   const responseLinkHeader = new LinkHeader(
                     // Might be undefined.
                     context.ctx.res.getHeader('Link')
@@ -184,7 +182,6 @@ module.exports = function withGraphQLApp(App) {
               ssr(graphql, <context.AppTree {...props} graphql={graphql} />)
                 .catch(console.error)
                 .then(() => {
-                  Head.rewind();
                   props.graphqlCache = graphql.cache;
                   resolve(props);
                 });
