@@ -42,7 +42,7 @@
   "browserslist": "Node 10.17 - 11 and Node < 11, Node 12 - 13 and Node < 13, Node >= 13.7, > 0.5%, not OperaMini all, not dead",
   "peerDependencies": {
     "graphql-react": "11 - 12",
-    "next": "9.0.3 - 10",
+    "next": "9.0.3 - 12",
     "react": "16.8 - 17"
   },
   "dependencies": {
