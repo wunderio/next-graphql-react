@@ -1,8 +1,20 @@
-![graphql-react logo](https://cdn.jsdelivr.net/gh/jaydenseric/graphql-react@0.1.0/graphql-react-logo.svg)
+# FORK of next-graphql-react
+
+We use this fork of next-graphql-react 8.0.3 because the library suffered a total refactoring after this version.
+
+And we didn't see it worth to rewrite our code to follow the new version guidelines.
+
+Still v8.0.3 has some issues to work with latest next.js versions, so we had to make some modifications and that's the reason of this fork.
+
+See also that this forks depends on the also forked [https://github.com/wunderio/graphql-react](graphql-react)
+
+See [also PR notes](https://github.com/wunderio/client-fi-espoo-web/pull/298) (private repo)
+
+Original README below:
+
+---
 
 # next-graphql-react
-
-[![npm version](https://badgen.net/npm/v/next-graphql-react)](https://npm.im/next-graphql-react) [![CI status](https://github.com/jaydenseric/next-graphql-react/workflows/CI/badge.svg)](https://github.com/jaydenseric/next-graphql-react/actions)
 
 A [`graphql-react`](https://npm.im/graphql-react) integration for [Next.js](https://nextjs.org) to enable server side rendered GraphQL operations.
 
